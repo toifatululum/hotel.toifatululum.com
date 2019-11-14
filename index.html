@@ -1,44 +1,237 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<nav>
-		<a href="#">Logo</a>
-		<input type="text" name="serach" placeholder="serach">	
-		<a href="#">Toifatul 'Ulum</a>
-	</nav>
-	<section>
-		<div class="container">
-			<div class="row-1 color-blue">
-				<h2>Hi, Toifatul 'Ulum</h2>
-				<h2>Mau booking hotel Idaman?</h2>
-				<label>Tujuan</label>
-				<input type="text" name="search">
-				<label>Check in</label>
-				<input type="date" name="check_in">
-				<label>Check out</label>
-				<input type="date" name="check_out">
-				<input type="text" name="search">
-				<label>Jumlah orang</label>
-				<select>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-				</select>
-				<select>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-				</select>
-				<input type="text" name="search" placeholder="search">
-			</div>
-		</div>
-		<div class="container"></div>
-	</section>
-	
-</body>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav-menu">
+          <div class="menu-left">
+            <a class="nav-link" href="#">Logo</a>
+            <div class="form-group">
+              <i class="fa fa-search"></i>
+              <input
+                class="search"
+                type="text"
+                name="serach"
+                placeholder="serach"
+              />
+            </div>
+          </div>
+          <div class="menu-right">
+            <a class="nav-link" href="#">Toifatul 'Ulum</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-1">
+      <div class="container">
+        <div class="row-1 color-blue">
+          <h3 class="color-white font-weight-normal">Hi, Toifatul 'Ulum</h3>
+          <h2 class="color-white">Mau booking hotel Idaman?</h2>
+          <div class="background-white ">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="padding-10">
+                  <label>Tujuan</label>
+                  <div class="form-group-not-border">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input
+                      type="text"
+                      name="search"
+                      placeholder="Mau pergi kemana?"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="padding-10">
+                  <label>Check in</label>
+                  <div class="form-group-not-border">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="check_in" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="padding-10">
+                  <label>Check out</label>
+                  <div class="form-group-not-border">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="check_out" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="padding-10">
+                  <label>Tamu</label>
+                  <div class="form-group-not-border">
+                    <i class="fas fa-user-friends"></i>
+                    <input type="text" name="search" placeholder="1 orang" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="padding-10">
+                  <label>Bintang</label>
+
+                  <div class="rating-css">
+                    <input
+                      type="radio"
+                      value="1"
+                      id="rating1-1"
+                      name="rating1"
+                    />
+                    <label for="rating1-1" class="fa fa-star"></label>
+                    <input
+                      type="radio"
+                      value="2"
+                      id="rating1-2"
+                      name="rating1"
+                    />
+                    <label for="rating1-2" class="fa fa-star"></label>
+                    <input
+                      type="radio"
+                      value="3"
+                      id="rating1-3"
+                      name="rating1"
+                      checked
+                    />
+                    <label for="rating1-3" class="fa fa-star"></label>
+                    <input
+                      type="radio"
+                      value="4"
+                      id="rating1-4"
+                      name="rating1"
+                    />
+                    <label for="rating1-4" class="fa fa-star"></label>
+                    <input
+                      type="radio"
+                      value="5"
+                      id="rating1-5"
+                      name="rating1"
+                    />
+                    <label for="rating1-5" class="fa fa-star"></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 ">
+                <label for="">Cari</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="space-section">
+      <div class="container">
+        <h1>asdasdas</h1>
+        <div class="carousel">
+          <div class="padding-10 cover">
+            <img
+              class="w-100"
+              src="https://images.unsplash.com/photo-1534523600533-71d091d911d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            />
+            <div class="cover-subtitle">
+              <label class="title">Aston Braga Hotel</label>
+              <div class="display-flex cover-img">
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <label>
+                  <i class="fas fa-map-marker-alt"></i> Bandung, Indonesia
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="padding-10 cover">
+            <img
+              class="w-100"
+              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            />
+          </div>
+          <div class="padding-10 cover">
+            <img
+              class="w-100"
+              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            />
+          </div>
+          <div class="padding-10 cover">
+            <img
+              class="w-100"
+              src="https://images.unsplash.com/photo-1551662968-94ef2ad1860a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            />
+          </div>
+          <div class="padding-10 cover">
+            <img
+              class="w-100"
+              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function() {
+        $('.carousel').slick({
+          slidesToShow: 4,
+          dots: true
+        });
+      });
+    </script>
+  </body>
 </html>
