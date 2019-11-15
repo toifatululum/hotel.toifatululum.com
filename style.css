@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 * {
   font-family: 'Nunito', sans-serif;
+  font-size: 15px;
 }
 
 body {
   margin: 0px;
 }
 nav {
-  padding: 10px;
+  background-color: white;
+  /* padding: 10px; */
 }
 nav a {
   padding: 10px 20px;
@@ -16,28 +18,47 @@ nav .nav-menu {
   display: flex;
   justify-content: space-between;
 }
+.space-between {
+  justify-content: space-between;
+}
+.padding-top-20 {
+  padding-top: 20px;
+}
 nav .nav-menu .menu-left {
   display: flex;
 }
 nav .nav-menu .menu-right {
   display: flex;
 }
-
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  text-decoration: none !important;
+}
+.nav-link a {
+  text-decoration: none !important;
+}
+.logo {
+  padding-right: 30px;
+}
 .form-group {
   border-radius: 3px;
   padding: 0px 10px;
+  margin: 10px 0px;
   border: rgb(148, 148, 148) solid 1px;
 }
 .form-group input {
   border: none;
   outline: none;
+  width: 350px;
   padding: 10px 0px 10px 20px;
   height: 48px;
 }
 
 .form-group-not-border {
   border-radius: 3px;
-  padding: 0px 10px;
+  padding: 0px 0px;
   border: rgb(148, 148, 148) solid 1px;
 }
 .form-group-not-border input {
@@ -92,9 +113,8 @@ nav .nav-menu .menu-right {
 
 .rating-css {
   cursor: pointer;
-  height: 30px;
+  height: 15px;
   font-size: 0;
-  margin-bottom: 15px;
 }
 
 .rating-css input {
@@ -103,7 +123,7 @@ nav .nav-menu .menu-right {
 
 .rating-css input + label {
   display: inline-block;
-  width: 25px;
+  width: 10px;
   line-height: 30px;
   text-align: center;
   font-size: 16px;
@@ -199,6 +219,10 @@ nav .nav-menu .menu-right {
   align-items: flex-end;
 }
 
+.ai-center {
+  align-items: center;
+}
+
 .cover {
   position: relative;
   color: white;
@@ -215,4 +239,556 @@ nav .nav-menu .menu-right {
 
 .title {
   font-size: 20px;
+}
+
+.border-radius {
+  border-radius: 2px;
+}
+
+.m-top-10 {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+.button {
+  background-color: #ffd7b2;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #e4a162;
+  cursor: pointer;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.ocean {
+  background-color: #d7e1e9;
+}
+
+/* This line can be removed it was just for display on CodePen: */
+
+.slider-labels {
+  margin-top: 10px;
+}
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-stacking .noUi-handle {
+  /* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+
+.noUi-state-tap .noUi-origin {
+  -webkit-transition: left 0.3s, top 0.3s;
+  transition: left 0.3s, top 0.3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base,
+.noUi-handle {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 4px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+  background-color: #345dbb;
+}
+
+/* Styling;
+ */
+.noUi-background {
+  background: #d6d7d9;
+}
+
+.noUi-connect {
+  background: #345dbb;
+  -webkit-transition: background 450ms;
+  transition: background 450ms;
+}
+
+.noUi-origin {
+  border-radius: 2px;
+}
+
+.noUi-target {
+  border-radius: 2px;
+}
+
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+  cursor: w-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: n-resize;
+}
+
+.noUi-handle {
+  cursor: default;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.noUi-handle:active {
+  border: 8px solid #345dbb;
+  border: 8px solid rgba(53, 93, 187, 0.38);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  left: -14px;
+  top: -14px;
+}
+
+/* Disabled state;
+ */
+[disabled].noUi-connect,
+[disabled] .noUi-connect {
+  background: #b8b8b8;
+}
+
+[disabled].noUi-origin,
+[disabled] .noUi-handle {
+  cursor: not-allowed;
+}
+
+button {
+  background: none;
+  border: 0;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 2em;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+
+button::before,
+button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.draw {
+  transition: color 0.25s;
+}
+.draw::before,
+.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before,
+.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.tag:hover::after {
+  border-left-color: crimson;
+}
+
+.star-rating {
+  text-align: center;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.rating input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  bottom: 0;
+}
+
+.star {
+  transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border-bottom: 1.26em solid #d3d3d3;
+  border-left: 1.8em solid transparent;
+  border-right: 1.8em solid transparent;
+  display: inline-block;
+  height: 0;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+  position: relative;
+  width: 0;
+  margin-right: 0.4em;
+  font-size: 8px;
+  margin-bottom: 20px;
+}
+.star:before,
+.star:after {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+}
+.star:before {
+  transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  border-bottom: 1.44em solid #d3d3d3;
+  border-left: 0.54em solid transparent;
+  border-right: 0.54em solid transparent;
+  left: -1.17em;
+  top: -0.81em;
+}
+.star:after {
+  transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -webkit-transform: rotate(-70deg);
+  border-bottom: 1.26em solid #d3d3d3;
+  border-left: 1.8em solid transparent;
+  border-right: 1.8em solid transparent;
+  left: -1.89em;
+  top: 0.054em;
+}
+
+.star-5.active,
+.star-5.active ~ .star {
+  border-bottom-color: #ff5254;
+}
+.star-5.active:before,
+.star-5.active:after,
+.star-5.active ~ .star:before,
+.star-5.active ~ .star:after {
+  border-bottom-color: #ff5254;
+}
+
+input[type='radio'] + .star-5 {
+  cursor: pointer;
+}
+input[type='radio'] + .star-5:hover,
+input[type='radio'] + .star-5:hover ~ .star {
+  border-bottom-color: #ff5254;
+}
+input[type='radio'] + .star-5:hover:before,
+input[type='radio'] + .star-5:hover:after,
+input[type='radio'] + .star-5:hover ~ .star:before,
+input[type='radio'] + .star-5:hover ~ .star:after {
+  border-bottom-color: #ff5254;
+}
+
+.rating:not(:hover) .radio-5:checked ~ .star {
+  border-bottom-color: #ff5254;
+}
+.rating:not(:hover) .radio-5:checked ~ .star:before,
+.rating:not(:hover) .radio-5:checked ~ .star:after {
+  border-bottom-color: #ff5254;
+}
+
+.star-4.active,
+.star-4.active ~ .star {
+  border-bottom-color: #ff6c35;
+}
+.star-4.active:before,
+.star-4.active:after,
+.star-4.active ~ .star:before,
+.star-4.active ~ .star:after {
+  border-bottom-color: #ff6c35;
+}
+
+input[type='radio'] + .star-4 {
+  cursor: pointer;
+}
+input[type='radio'] + .star-4:hover,
+input[type='radio'] + .star-4:hover ~ .star {
+  border-bottom-color: #ff6c35;
+}
+input[type='radio'] + .star-4:hover:before,
+input[type='radio'] + .star-4:hover:after,
+input[type='radio'] + .star-4:hover ~ .star:before,
+input[type='radio'] + .star-4:hover ~ .star:after {
+  border-bottom-color: #ff6c35;
+}
+
+.rating:not(:hover) .radio-4:checked ~ .star {
+  border-bottom-color: #ff6c35;
+}
+.rating:not(:hover) .radio-4:checked ~ .star:before,
+.rating:not(:hover) .radio-4:checked ~ .star:after {
+  border-bottom-color: #ff6c35;
+}
+
+.star-3.active,
+.star-3.active ~ .star {
+  border-bottom-color: #ff9900;
+}
+.star-3.active:before,
+.star-3.active:after,
+.star-3.active ~ .star:before,
+.star-3.active ~ .star:after {
+  border-bottom-color: #ff9900;
+}
+
+input[type='radio'] + .star-3 {
+  cursor: pointer;
+}
+input[type='radio'] + .star-3:hover,
+input[type='radio'] + .star-3:hover ~ .star {
+  border-bottom-color: #ff9900;
+}
+input[type='radio'] + .star-3:hover:before,
+input[type='radio'] + .star-3:hover:after,
+input[type='radio'] + .star-3:hover ~ .star:before,
+input[type='radio'] + .star-3:hover ~ .star:after {
+  border-bottom-color: #ff9900;
+}
+
+.rating:not(:hover) .radio-3:checked ~ .star {
+  border-bottom-color: #ff9900;
+}
+.rating:not(:hover) .radio-3:checked ~ .star:before,
+.rating:not(:hover) .radio-3:checked ~ .star:after {
+  border-bottom-color: #ff9900;
+}
+
+.star-2.active,
+.star-2.active ~ .star {
+  border-bottom-color: #3f9e37;
+}
+.star-2.active:before,
+.star-2.active:after,
+.star-2.active ~ .star:before,
+.star-2.active ~ .star:after {
+  border-bottom-color: #3f9e37;
+}
+
+input[type='radio'] + .star-2 {
+  cursor: pointer;
+}
+input[type='radio'] + .star-2:hover,
+input[type='radio'] + .star-2:hover ~ .star {
+  border-bottom-color: #3f9e37;
+}
+input[type='radio'] + .star-2:hover:before,
+input[type='radio'] + .star-2:hover:after,
+input[type='radio'] + .star-2:hover ~ .star:before,
+input[type='radio'] + .star-2:hover ~ .star:after {
+  border-bottom-color: #3f9e37;
+}
+
+.rating:not(:hover) .radio-2:checked ~ .star {
+  border-bottom-color: #3f9e37;
+}
+.rating:not(:hover) .radio-2:checked ~ .star:before,
+.rating:not(:hover) .radio-2:checked ~ .star:after {
+  border-bottom-color: #3f9e37;
+}
+
+.star-1.active,
+.star-1.active ~ .star {
+  border-bottom-color: #14892c;
+}
+.star-1.active:before,
+.star-1.active:after,
+.star-1.active ~ .star:before,
+.star-1.active ~ .star:after {
+  border-bottom-color: #14892c;
+}
+
+input[type='radio'] + .star-1 {
+  cursor: pointer;
+}
+input[type='radio'] + .star-1:hover,
+input[type='radio'] + .star-1:hover ~ .star {
+  border-bottom-color: #14892c;
+}
+input[type='radio'] + .star-1:hover:before,
+input[type='radio'] + .star-1:hover:after,
+input[type='radio'] + .star-1:hover ~ .star:before,
+input[type='radio'] + .star-1:hover ~ .star:after {
+  border-bottom-color: #14892c;
+}
+
+.rating:not(:hover) .radio-1:checked ~ .star {
+  border-bottom-color: #14892c;
+}
+.rating:not(:hover) .radio-1:checked ~ .star:before,
+.rating:not(:hover) .radio-1:checked ~ .star:after {
+  border-bottom-color: #14892c;
 }

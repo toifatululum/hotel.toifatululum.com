@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css"
+    />
+    <link rel="stylesheet" href="./slick.theme.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+  </head>
+
+  <body class="ocean">
+    <nav>
+      <div class="container">
+        <div class="nav-menu">
+          <div class="menu-left">
+            <a class="nav-link logo" href="#"
+              ><img src="./assets//img//Logo.png" alt=""
+            /></a>
+            <div class="form-group">
+              <i class="fa fa-search"></i>
+              <input
+                class="search"
+                type="text"
+                name="serach"
+                placeholder="serach"
+              />
+            </div>
+          </div>
+          <div class="menu-right">
+            <div class="nav-link">
+              <img src="./assets/img/002-bookmark 1.svg" alt="" />
+            </div>
+            <div class="nav-link">
+              <img src="./assets/img/Group 107.png" alt="" />
+              <a class="nav-link" href="#">Toifatul 'Ulum</a>
+            </div>
+            <div class="nav-link">
+              <img src="./assets/img/Group 11.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="space-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="background-white border-radius ">
+              <div class="padding-20">
+                <h3>Budget per night</h3>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+                <div class="display-flex space-between padding-top-20">
+                  <div class="">
+                    <strong>Min:</strong> <span id="slider-range-value1"></span>
+                  </div>
+                  <div class="">
+                    <strong>Max:</strong> <span id="slider-range-value2"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <form>
+                      <input type="hidden" name="min-value" value="" />
+                      <input type="hidden" name="max-value" value="" />
+                    </form>
+                  </div>
+                </div>
+                <button class="draw">Draw</button>
+              </div>
+
+              <hr />
+              <div class="padding-20">
+                <h3>Frequency Use</h3>
+                <ul class="tags">
+                  <li><a href="#" class="tag">HTML</a></li>
+                  <li><a href="#" class="tag">CSS</a></li>
+                  <li><a href="#" class="tag">JavaScript</a></li>
+                  <li><a href="#" class="tag">JavaScript</a></li>
+                  <li><a href="#" class="tag">Bed</a></li>
+                </ul>
+              </div>
+              <hr />
+              <div class="padding-20">
+                <h3>Start Rating</h3>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="start55"
+                    name="rating5"
+                    value="5"
+                    class="radio-1"
+                  />
+                  <label
+                    for="start55"
+                    class="star star-1"
+                    title="Excellent"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start45"
+                    name="rating5"
+                    value="4"
+                    class="radio-2"
+                  />
+                  <label
+                    for="start45"
+                    class="star star-2"
+                    title="Great"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start35"
+                    name="rating5"
+                    value="3"
+                    class="radio-3"
+                  />
+                  <label
+                    for="start35"
+                    class="star star-3"
+                    title="Average"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start25"
+                    name="rating5"
+                    value="2"
+                    class="radio-4"
+                  />
+                  <label for="start25" class="star star-4" title="Poor"></label>
+                  <input
+                    type="radio"
+                    id="start15"
+                    checked=""
+                    name="rating5"
+                    value="1"
+                    class="radio-5"
+                  />
+                  <label for="start15" class="star star-5" title="Bad"></label>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="start51"
+                    name="rating3"
+                    value="5"
+                    class="radio-1"
+                  />
+                  <label
+                    for="start51"
+                    class="star star-1"
+                    title="Excellent"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start41"
+                    name="rating3"
+                    value="4"
+                    class="radio-2"
+                  />
+                  <label
+                    for="start41"
+                    class="star star-2"
+                    title="Great"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start31"
+                    name="rating3"
+                    value="3"
+                    class="radio-3"
+                  />
+                  <label
+                    for="start31"
+                    class="star star-3"
+                    title="Average"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start21"
+                    checked=""
+                    name="rating3"
+                    value="2"
+                    class="radio-4"
+                  />
+                  <label for="start21" class="star star-4" title="Poor"></label>
+                  <input
+                    type="radio"
+                    id="start11"
+                    name="rating3"
+                    value="1"
+                    class="radio-5"
+                  />
+                  <label for="start11" class="star star-5" title="Bad"></label>
+                </div>
+
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="start53"
+                    name="rating2"
+                    value="5"
+                    checked=""
+                    class="radio-1"
+                  />
+                  <label
+                    for="start53"
+                    class="star star-1"
+                    title="Excellent"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start43"
+                    name="rating2"
+                    value="4"
+                    class="radio-2"
+                  />
+                  <label
+                    for="start43"
+                    class="star star-2"
+                    title="Great"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start33"
+                    name="rating2"
+                    checked=""
+                    value="3"
+                    class="radio-3"
+                  />
+                  <label
+                    for="start33"
+                    class="star star-3"
+                    title="Average"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start23"
+                    name="rating2"
+                    value="2"
+                    class="radio-4"
+                  />
+                  <label for="start23" class="star star-4" title="Poor"></label>
+                  <input
+                    type="radio"
+                    id="start13"
+                    name="rating2"
+                    value="1"
+                    class="radio-5"
+                  />
+                  <label for="start13" class="star star-5" title="Bad"></label>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="start52"
+                    name="rating1"
+                    value="5"
+                    class="radio-1"
+                  />
+                  <label
+                    for="start52"
+                    class="star star-1"
+                    title="Excellent"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start42"
+                    name="rating1"
+                    checked=""
+                    value="4"
+                    class="radio-2"
+                  />
+                  <label
+                    for="start42"
+                    class="star star-2"
+                    title="Great"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start32"
+                    name="rating1"
+                    value="3"
+                    class="radio-3"
+                  />
+                  <label
+                    for="start32"
+                    class="star star-3"
+                    title="Average"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start22"
+                    name="rating1"
+                    value="2"
+                    class="radio-4"
+                  />
+                  <label for="start22" class="star star-4" title="Poor"></label>
+                  <input
+                    type="radio"
+                    id="start12"
+                    name="rating1"
+                    value="1"
+                    class="radio-5"
+                  />
+                  <label for="start12" class="star star-5" title="Bad"></label>
+                </div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    id="start54"
+                    name="rating4"
+                    value="5"
+                    checked=""
+                    class="radio-1"
+                  />
+                  <label
+                    for="start54"
+                    class="star star-1"
+                    title="Excellent"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start44"
+                    name="rating4"
+                    value="4"
+                    class="radio-2"
+                  />
+                  <label
+                    for="start44"
+                    class="star star-2"
+                    title="Great"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start34"
+                    name="rating4"
+                    value="3"
+                    class="radio-3"
+                  />
+                  <label
+                    for="start34"
+                    class="star star-3"
+                    title="Average"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="start24"
+                    name="rating4"
+                    value="2"
+                    class="radio-4"
+                  />
+                  <label for="start24" class="star star-4" title="Poor"></label>
+                  <input
+                    type="radio"
+                    id="start14"
+                    name="rating4"
+                    value="1"
+                    class="radio-5"
+                  />
+                  <label for="start14" class="star star-5" title="Bad"></label>
+                </div>
+                <button class="draw">Draw</button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-8">asdasdasdas</div>
+        </div>
+      </div>
+    </section>
+    <script src="./range.js"></script>
+  </body>
+</html>
