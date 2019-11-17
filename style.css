@@ -2,6 +2,7 @@
 * {
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
+  color: #4c7ea1;
 }
 
 body {
@@ -23,6 +24,27 @@ nav .nav-menu {
 }
 .padding-top-20 {
   padding-top: 20px;
+}
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+.padding-left-5 {
+  padding-left: 5px;
+}
+.padding-right-5 {
+  padding-right: 5px;
+}
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.margin-right-10 {
+  margin-right: 10px;
 }
 nav .nav-menu .menu-left {
   display: flex;
@@ -791,4 +813,85 @@ input[type='radio'] + .star-1:hover ~ .star:after {
 .rating:not(:hover) .radio-1:checked ~ .star:before,
 .rating:not(:hover) .radio-1:checked ~ .star:after {
   border-bottom-color: #14892c;
+}
+
+/* collor */
+.color-black {
+  color: black;
+}
+
+.color-orange {
+  color: tomato;
+}
+
+.width100 {
+  width: 100%;
+}
+
+/* pagination */
+.pagination {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination li {
+  display: inline-block;
+}
+.pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #000000;
+  text-decoration: none;
+}
+.pagination li a.active {
+  color: #000000;
+  background: #ffffff;
+}
+.pagination li.elip {
+  margin: 0 0.5rem;
+}
+
+.pagination.shake li a:hover {
+  animation: shake 0.35s linear;
+}
+
+.pagination.contract li {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.pagination.contract li a:hover {
+  animation: contract 0.3s linear;
+}
+
+@keyframes contract {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
