@@ -975,3 +975,31 @@ input[type='radio'] + .star-1:hover ~ .star:after {
 .padding-right-10 {
   padding-right: 10px;
 }
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  border-radius: 3px;
+  padding: 10px 10px;
+  height: 48px;
+  margin: 10px 0px;
+  border: rgb(148, 148, 148) solid 1px;
+}
+
+.form {
+  margin-bottom: 20px;
+  border-left: #3f9e37 solid 5px;
+  padding-left: 30px;
+}
+
+.color-grey {
+  color: rgb(180, 180, 180);
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
