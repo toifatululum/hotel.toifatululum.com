@@ -22,6 +22,9 @@ nav .nav-menu {
 .space-between {
   justify-content: space-between;
 }
+.flex-direction {
+  flex-direction: column;
+}
 .padding-top-20 {
   padding-top: 20px;
 }
@@ -45,6 +48,9 @@ nav .nav-menu {
 }
 .margin-right-10 {
   margin-right: 10px;
+}
+.padding-top-20 {
+  padding-top: 20px;
 }
 nav .nav-menu .menu-left {
   display: flex;
@@ -414,9 +420,6 @@ h3 {
   border-radius: 2px;
 }
 
-.noUi-target.noUi-connect {
-}
-
 /* Handles and cursors;
  */
 .noUi-draggable {
@@ -538,7 +541,6 @@ button::after {
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
-  -webkit-transition: color 0.2s;
 }
 
 .tag::before {
@@ -827,6 +829,9 @@ input[type='radio'] + .star-1:hover ~ .star:after {
 .width100 {
   width: 100%;
 }
+.height100 {
+  height: 100%;
+}
 
 /* pagination */
 .pagination {
@@ -894,4 +899,79 @@ input[type='radio'] + .star-1:hover ~ .star:after {
   100% {
     transform: rotate(0deg);
   }
+}
+
+.rating-img {
+  width: 20px;
+  margin-right: 7px;
+  margin-top: 10px;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.height-33 {
+  height: 30%;
+  margin-bottom: 7px;
+}
+
+.grid-1 {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSXX8GhJ2abJHDupJqr75Mth7SBrJcFgzSSHVpemePc9uxNvfO0');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-2 {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0Vb_PNtMxCC-X2QIiobQQ-bzFVJeRlbRQQI_nM6f3UNVHPrDc');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-3 {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTeTz9Nwsbh1WmoATG3buyWYFb49Vp7SQu-55p0yJppgXaZx9xS');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.width30px {
+  width: 30px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.background-grey {
+  background: rgb(240, 240, 240);
+}
+
+.height-150 {
+  height: 150px;
+}
+
+.height-200 {
+  height: 200px;
+}
+
+.avatar {
+  height: 40px;
+  border-radius: 100%;
+  background: url('https://i.pinimg.com/originals/79/d5/87/79d587dfe991e8892bf892b161ff8968.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
 }
