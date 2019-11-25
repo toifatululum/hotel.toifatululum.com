@@ -6,6 +6,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="grid.css" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -27,7 +28,7 @@
             <a class="nav-link logo" href="#"
               ><img src="./assets//img//Logo.png" alt=""
             /></a>
-            <div class="form-group">
+            <div class="form-group r-mobile">
               <i class="fa fa-search"></i>
               <input
                 class="search"
@@ -37,17 +38,26 @@
               />
             </div>
           </div>
-          <div class="menu-right">
-            <div class="nav-link">
+
+          <div class="menu-right r-mobile">
+            <div></div>
+            <div class="nav-link r-mobile">
               <img src="./assets/img/002-bookmark 1.svg" alt="" />
             </div>
-            <div class="nav-link">
-              <img src="./assets/img/Group 107.png" alt="" />
-              <a class="nav-link" href="#">Toifatul 'Ulum</a>
-            </div>
-            <div class="nav-link">
+            <div class="nav-link ">
+                <img src="./assets/img/Group 107.png" alt="" />
+                <a class="nav-link" href="#">Toifatul 'Ulum</a>
+              </div>
+              <div class="nav-link r-none">
+                  
+                  <a id="untoggle" class="nav-link" class="nav-link" href="#">Close</a>
+                </div>
+            <div class="nav-link r-mobile">
               <img src="./assets/img/Group 11.png" alt="" />
             </div>
+          </div>
+          <div id="toggle" class="r-none">
+            <img src="./assets/img/Group 11.png" alt="" />
           </div>
         </div>
       </div>
@@ -55,8 +65,15 @@
 
     <section class="space-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="r-none width100">
+          <div class="display-flex space-between width100">
+              <div>filter</div>
+              <img id="toggle-show" class="active" src="./assets/img/Group 127.svg" alt="">
+              <img id="toggle-hide" class="non-active" src="./assets/img/Group 127.svg" alt="">
+          </div>
+        </div>
+        <div class="row ">
+          <div id="filter" class="col-md-4 r-mobile">
             <div class="background-white border-radius ">
               <div class="padding-20">
                 <h3>Budget per night</h3>
@@ -73,7 +90,7 @@
                     <strong>Max:</strong> <span id="slider-range-value2"></span>
                   </div>
                 </div>
-                <div class="row">
+                <div class="row ">
                   <div class="col-sm-12">
                     <form>
                       <input type="hidden" name="min-value" value="" />
@@ -381,7 +398,7 @@
             </div>
           </div>
           <div class="col-md-8">
-              <div class="row no-gutters margin-bottom-30">
+              <div class="row no-gutters margin-bottom-30 row-reverse">
                   <div class="col-md-8">
                       <div class="card">
                           <div class="background-white">
@@ -444,11 +461,11 @@
                       </div>
                   </div>
                   <div
-                    class="col-md-4"
+                    class="col-md-4 r-height-100"
                     style="background: url('https://images.unsplash.com/photo-1573921470445-8d99c48c879f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');background-size: cover;background-repeat: no-repeat;"
                   ></div>
                 </div>
-                <div class="row no-gutters margin-bottom-30">
+                <div class="row no-gutters margin-bottom-30 row-reverse">
                     <div class="col-md-8">
                         <div class="card">
                             <div class="background-white">
@@ -511,11 +528,11 @@
                         </div>
                     </div>
                     <div
-                      class="col-md-4"
+                      class="col-md-4  r-height-100"
                       style="background: url('https://images.unsplash.com/photo-1573921470445-8d99c48c879f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');background-size: cover;background-repeat: no-repeat;"
                     ></div>
                   </div>
-                  <div class="row no-gutters margin-bottom-30">
+                  <div class="row no-gutters margin-bottom-30 row-reverse">
                       <div class="col-md-8">
                           <div class="card">
                               <div class="background-white">
@@ -577,11 +594,11 @@
                           </div>
                       </div>
                       <div
-                        class="col-md-4"
+                        class="col-md-4 r-height-100"
                         style="background: url('https://images.unsplash.com/photo-1573921470445-8d99c48c879f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');background-size: cover;background-repeat: no-repeat;"
                       ></div>
                     </div>
-                    <div class="row no-gutters margin-bottom-30">
+                    <div class="row no-gutters margin-bottom-30 row-reverse">
                         <div class="col-md-8">
                             <div class="card">
                                 <div class="background-white">
@@ -643,7 +660,7 @@
                             </div>
                         </div>
                         <div
-                          class="col-md-4"
+                          class="col-md-4 r-height-100"
                           style="background: url('https://images.unsplash.com/photo-1573921470445-8d99c48c879f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');background-size: cover;background-repeat: no-repeat;"
                         ></div>
                       </div>
@@ -677,6 +694,34 @@
         </div>
       </div>
     </section>
+    <script>
+     $(document).ready(function() {
+        $('.active').click(function(){
+          $('#filter').addClass("display-inline-block")
+          $(this).addClass("non-active")
+          $(this).removeClass("active")
+          $("#toggle-hide").addClass("active")
+          $("#toggle-hide").removeClass("non-active")
+        })
+      });
+      $(document).ready(function() {
+        $('.non-active').click(function(){
+          $('#filter').removeClass("display-inline-block")
+          $(this).addClass("non-active")
+          $(this).removeClass("active")
+          $("#toggle-show").addClass("active")
+          $("#toggle-show").removeClass("non-active")
+        })
+      });
+      $(document).ready(function() {
+        $('#toggle').click(function(){
+          $('.menu-right').addClass("overlay")
+        })
+        $('#untoggle').click(function(){
+          $('.menu-right').removeClass("overlay")
+        })
+      });
+    </script>
     <script src="./range.js"></script>
   </body>
 </html>
