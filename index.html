@@ -45,13 +45,14 @@
               <img src="./assets/img/002-bookmark 1.svg" alt="" />
             </div>
             <div class="nav-link ">
-                <img src="./assets/img/Group 107.png" alt="" />
-                <a class="nav-link" href="#">Toifatul 'Ulum</a>
-              </div>
-              <div class="nav-link r-none">
-                  
-                  <a id="untoggle" class="nav-link" class="nav-link" href="#">Close</a>
-                </div>
+              <img src="./assets/img/Group 107.png" alt="" />
+              <a class="nav-link" href="#">Toifatul 'Ulum</a>
+            </div>
+            <div class="nav-link r-none">
+              <a id="untoggle" class="nav-link" class="nav-link" href="#"
+                >Close</a
+              >
+            </div>
             <div class="nav-link r-mobile">
               <img src="./assets/img/Group 11.png" alt="" />
             </div>
@@ -106,7 +107,7 @@
                   <label>Tamu</label>
                   <div class="form-group-not-border">
                     <i class="fas fa-user-friends"></i>
-                    <input type="text" name="search" placeholder="1 orang" />
+                    <input type="number" name="search" placeholder="1 orang" />
                   </div>
                 </div>
               </div>
@@ -169,8 +170,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-1 display-flex jc-center button ai-center r-padding-buttom">
-                <label class="" for="">Cari</label>
+              <div
+                class="col-md-1 display-flex jc-center button ai-center r-padding-buttom"
+              >
+                <a href="list.html"><label class="" for="">Cari</label></a>
               </div>
             </div>
           </div>
@@ -182,12 +185,9 @@
         <h1>asdasdas</h1>
         <div class="carousel">
           <div class="padding-10 cover">
-            <img
-              class="w-100"
-              src="https://images.unsplash.com/photo-1534523600533-71d091d911d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-            />
+            <img class="w-100" src="assets/img/bali.png" />
             <div class="cover-subtitle">
-              <label class="title">Aston Braga Hotel</label>
+              <label class="title">The Apurva Kempinski</label>
               <div class="display-flex cover-img">
                 <img
                   width="20"
@@ -215,36 +215,59 @@
                   alt=""
                 />
               </div>
-              <div>
+              <div class="text-align-left">
                 <label>
-                  <i class="fas fa-map-marker-alt"></i> Bandung, Indonesia
+                  <i class="fas fa-map-marker-alt"></i>Bali, Indonesia
                 </label>
               </div>
             </div>
           </div>
           <div class="padding-10 cover">
-            <img
-              class="w-100"
-              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-            />
+            <img class="w-100" src="assets/img/bandung.png" />
+            <div class="cover-subtitle">
+              <label class="title">The Apurva Kempinski</label>
+              <div class="display-flex cover-img">
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+                <img
+                  width="20"
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Orange_star.svg"
+                  alt=""
+                />
+              </div>
+              <div class="text-align-left">
+                <label>
+                  <i class="fas fa-map-marker-alt"></i>Bali, Indonesia
+                </label>
+              </div>
+            </div>
           </div>
           <div class="padding-10 cover">
-            <img
-              class="w-100"
-              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-            />
+            <img class="w-100" src="assets/img/Group 6.png" />
           </div>
           <div class="padding-10 cover">
-            <img
-              class="w-100"
-              src="https://images.unsplash.com/photo-1551662968-94ef2ad1860a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-            />
+            <img class="w-100" src="assets/img/image 12.png" />
           </div>
           <div class="padding-10 cover">
-            <img
-              class="w-100"
-              src="https://images.unsplash.com/photo-1533088468076-d1f6bdf16f62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
-            />
+            <img class="w-100" src="assets/img/Group 115.png" />
           </div>
         </div>
       </div>
@@ -252,42 +275,43 @@
 
     <script>
       $(document).ready(function() {
-        $('.carousel').slick({
+        $(".carousel").slick({
           slidesToShow: 4,
           dots: true,
-          responsive: [{
-            breakpoint: 1024,
-            settings: {
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
                 slidesToShow: 4,
-                slidesToScroll: 5,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
+                slidesToScroll: 5
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
+              }
             }
-        }],
+          ],
           prevArrow:
             '<div class="slider-arrow slider-prev fa fa-angle-left"></div>',
           nextArrow:
             '<div class="slider-arrow slider-next fa fa-angle-right"></div>'
         });
-        $('#toggle').click(function(){
-          $('.menu-right').addClass("overlay")
-        })
-        $('#untoggle').click(function(){
-          $('.menu-right').removeClass("overlay")
-        })
-
+        $("#toggle").click(function() {
+          $(".menu-right").addClass("overlay");
+        });
+        $("#untoggle").click(function() {
+          $(".menu-right").removeClass("overlay");
+        });
       });
     </script>
   </body>
