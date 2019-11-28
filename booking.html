@@ -80,15 +80,31 @@
       <div class="container margin-top-20">
         <div class="row column">
           <div class="col-md-8 col-sm-8 col-12">
-            <img class="width100" src="assets/img/facilitas/detail1.jpg" />
+            <img
+              id="4"
+              class="width100 height-500 grid-4"
+              onclick="myFunction(this.id)"
+            />
           </div>
           <div class="col-md-4 col-sm-4 col-12  margin-10">
             <div
               class="display-flex space-between row flex-direction width100 height100"
             >
-              <div class="height-33 grid-1"></div>
-              <div class="height-33 grid-2"></div>
-              <div class="height-33 grid-3"></div>
+              <div
+                id="1"
+                class="height-33 grid-1"
+                onclick="myFunction(this.id)"
+              ></div>
+              <div
+                id="2"
+                class="height-33 grid-2"
+                onclick="myFunction(this.id)"
+              ></div>
+              <div
+                id="3"
+                class="height-33 grid-3"
+                onclick="myFunction(this.id)"
+              ></div>
             </div>
           </div>
         </div>
@@ -104,7 +120,6 @@
           <a href="login.html">
             <button class="orange">Booking now</button>
           </a>
-          
         </div>
 
         <p class="margin-bottom-20">From 2,499 reviews</p>
@@ -216,5 +231,41 @@
         </div>
       </div>
     </section>
+    <div id="hidden-popup" class="modal-overlay" onclick="exit()">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <div
+              id="preview"
+              class="background-white margin-top-100 height-500"
+            >
+              asdasdasd
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    function myFunction(id) {
+      console.log(id);
+      $(document).ready(function() {
+        // console.log(`.grid-${id}`);
+        $('#hidden-popup').addClass('active');
+        $('#preview').removeClass(`grid-${1}`);
+        $('#preview').removeClass(`grid-${2}`);
+        $('#preview').removeClass(`grid-${3}`);
+        $('#preview').removeClass(`grid-${4}`);
+        $('#preview').addClass(`grid-${id}`);
+      });
+    }
+    function exit() {
+      $(document).ready(function() {
+        // console.log(`.grid-${id}`);
+        $('#hidden-popup').removeClass('active');
+      });
+    }
+  </script>
 </html>
