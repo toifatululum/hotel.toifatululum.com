@@ -215,7 +215,7 @@
               <div class="background-white height-200 padding-20">
                 <div class="display-flex align-center">
                   <div class="avatar margin-right-10">.</div>
-                  <label for="">Toto Rubianto</label>
+                  <label for="">Citra Pangestu</label>
                 </div>
                 <p>
                   Good service, the waiters it's so friendly. I like the food,
@@ -253,18 +253,27 @@
       console.log(id);
       $(document).ready(function() {
         // console.log(`.grid-${id}`);
-        $('#hidden-popup').addClass('active');
-        $('#preview').removeClass(`grid-${1}`);
-        $('#preview').removeClass(`grid-${2}`);
-        $('#preview').removeClass(`grid-${3}`);
-        $('#preview').removeClass(`grid-${4}`);
-        $('#preview').addClass(`grid-${id}`);
+        $("#hidden-popup").addClass("active");
+        $("#preview").removeClass(`grid-${1}`);
+        $("#preview").removeClass(`grid-${2}`);
+        $("#preview").removeClass(`grid-${3}`);
+        $("#preview").removeClass(`grid-${4}`);
+        $("#preview").addClass(`grid-${id}`);
       });
     }
+
+    $(document).ready(function() {
+      $("#toggle").click(function() {
+        $(".menu-right").addClass("overlay");
+      });
+      $("#untoggle").click(function() {
+        $(".menu-right").removeClass("overlay");
+      });
+    });
     function exit() {
       $(document).ready(function() {
         // console.log(`.grid-${id}`);
-        $('#hidden-popup').removeClass('active');
+        $("#hidden-popup").removeClass("active");
       });
     }
   </script>

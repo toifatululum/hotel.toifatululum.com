@@ -98,5 +98,15 @@
         </div>
       </form>
     </div>
+    <script>
+      $(document).ready(function() {
+        $("#toggle").click(function() {
+          $(".menu-right").addClass("overlay");
+        });
+        $("#untoggle").click(function() {
+          $(".menu-right").removeClass("overlay");
+        });
+      });
+    </script>
   </body>
 </html>
