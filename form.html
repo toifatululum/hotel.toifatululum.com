@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link
       rel="stylesheet"
@@ -27,7 +28,7 @@
             <a class="nav-link logo" href="#"
               ><img src="./assets//img//Logo.png" alt=""
             /></a>
-            <div class="form-group">
+            <div class="form-group r-mobile">
               <i class="fa fa-search"></i>
               <input
                 class="search"
@@ -37,17 +38,27 @@
               />
             </div>
           </div>
-          <div class="menu-right">
-            <div class="nav-link">
+
+          <div class="menu-right r-mobile">
+            <div></div>
+            <div class="nav-link r-mobile">
               <img src="./assets/img/002-bookmark 1.svg" alt="" />
             </div>
-            <div class="nav-link">
+            <div class="nav-link ">
               <img src="./assets/img/Group 107.png" alt="" />
               <a class="nav-link" href="#">Toifatul 'Ulum</a>
             </div>
-            <div class="nav-link">
+            <div class="nav-link r-none">
+              <a id="untoggle" class="nav-link" class="nav-link" href="#"
+                >Close</a
+              >
+            </div>
+            <div class="nav-link r-mobile">
               <img src="./assets/img/Group 11.png" alt="" />
             </div>
+          </div>
+          <div id="toggle" class="r-none">
+            <img src="./assets/img/Group 11.png" alt="" />
           </div>
         </div>
       </div>
@@ -216,7 +227,7 @@
 
     <script>
       $(document).ready(function() {
-        $(".carousel").slick({
+        $('.carousel').slick({
           slidesToShow: 4,
           dots: true,
           prevArrow:

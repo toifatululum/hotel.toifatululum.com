@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
     <link rel="stylesheet" href="grid.css" />
+
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css"
@@ -66,56 +68,96 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div class="padding-30 background-white margin-top-20">
             <label>Find All your e-ticket here</label>
           </div>
-          <div class="display-flex space-between">
-            <button
-              class="margin-right-10 width100 button-orange is-active padding-10 margin-top-20 margin-bottom-20 color-white text-align-center border-radius"
-            >
-              September
-            </button>
-            <button
-              class="margin-right-10 width100 button-orange padding-10 margin-top-20 margin-bottom-20 color-white text-align-center border-radius"
-            >
-              Oktober
-            </button>
-
-            <button
-              class="margin-right-10 width100 button-orange padding-10 margin-top-20 margin-bottom-20 color-white text-align-center border-radius"
-            >
-              November
-            </button>
-            <button
-              class="margin-right-10 width100 button-orange padding-10 margin-top-20 margin-bottom-20 color-white text-align-center border-radius"
-            >
-              Desember
-            </button>
-            <button
-              class="margin-right-10 width100 button-orange padding-10 margin-top-20 margin-bottom-20 color-white text-align-center border-radius"
-            >
-              Filter
-            </button>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <input
-                type="date"
-                name="date"
-                class="width100 date"
-                disabled="true"
-                value="2015-10-12"
-              />
+          <div class="padding-20 background-white margin-top-20">
+            <h2>Filter Bookingan</h2>
+            <label for="">Berdasarkan Bulan</label>
+            <div class="row margin-bottom-20">
+              <div class="col-md-3">
+                <button
+                  class="margin-right-10 width100 button-orange  padding-10  color-white text-align-center border-radius"
+                >
+                  Custom Filter
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button
+                  class="margin-right-10 width100 button-orange is-active padding-10 color-white text-align-center border-radius"
+                >
+                  Oktober
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button
+                  class="margin-right-10 width100 button-orange padding-10  color-white text-align-center border-radius"
+                >
+                  November
+                </button>
+              </div>
+              <div class="col-md-3">
+                <button
+                  class="margin-right-10 width100 button-orange padding-10  color-white text-align-center border-radius"
+                >
+                  Desember
+                </button>
+              </div>
             </div>
-            <div class="col-md-6">
-              <input
-                type="date"
-                name="date"
-                class="width100 date"
-                disabled="true"
-                value="2015-12-12"
-              />
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">Dari Tanggal</label>
+                <input
+                  type="date"
+                  name="date"
+                  class="width100 date"
+                  disabled="true"
+                  value="2015-10-12"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="">Sampai Tanggal</label>
+                <input
+                  type="date"
+                  name="date"
+                  class="width100 date"
+                  disabled="true"
+                  value="2015-12-12"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="box-tiket">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Booking ID : 123456789</h3>
+                <div class="display-flex">
+                  <i class="fas fa-hotel"></i>
+                  <label>Pasteur Hotel</label>
+                </div>
+                <br />
+                <form>
+                  <input
+                    class="button-tiket"
+                    type="submit"
+                    name="submit"
+                    value="Succesfull"
+                  />
+                </form>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="display-flex flex-direction align-end space-between height100"
+                >
+                  <div><h1>Rp 5.000.000</h1></div>
+                  <div>
+                    <a class="padding-right-10" href="">print tiket</a>
+                    <a class="padding-right-10" href="">see detail</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="box-tiket">
@@ -150,7 +192,13 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3 padding-20">
+          <img
+            src="./assets/img/iklan-gambar-instagram-wisata-travel-nusa-penida.jpg"
+            class="width100"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </body>
