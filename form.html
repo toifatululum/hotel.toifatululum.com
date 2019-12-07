@@ -171,8 +171,8 @@
                   <p class="no-wrap">Rp 5.279.421</p>
                 </div>
               </div>
-              <a href="tiket.html">
-                <button class="width-100">Review ticket</button>
+              <a onclick="pembayaran()">
+                <button class="width-100">Bayar</button>
               </a>
             </div>
           </section>
@@ -228,16 +228,84 @@
         </div>
       </div>
     </div>
-
+    <div id="hidden-popup" class="modal-overlay" onclick="exit()">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 background-white">
+            <h2>Pilih Metode Pembayaran</h2>
+            <div class="padding-20 border margin-bottom-20">
+              <a href="tiket.html">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      height="20px"
+                      src="./assets//img/bank/836405_720.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    BCA
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="padding-20 border margin-bottom-20">
+              <a href="tiket.html">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      height="20px"
+                      src="./assets/img/bank/mandiri.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    Mandiri
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="padding-20 border margin-bottom-20">
+              <a href="tiket.html">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img height="20px" src="./assets/img/bank/bni.png" alt="" />
+                  </div>
+                  <div class="col-md-9">
+                    BNI
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
     <script>
-      $(document).ready(function() {
-        $("#toggle").click(function() {
-          $(".menu-right").addClass("overlay");
+      function pembayaran() {
+        $(document).ready(function() {
+          // console.log(`.grid-${id}`);
+          $('#hidden-popup').addClass('active');
         });
-        $("#untoggle").click(function() {
-          $(".menu-right").removeClass("overlay");
+      }
+
+      $(document).ready(function() {
+        $('#toggle').click(function() {
+          $('.menu-right').addClass('overlay');
+        });
+        $('#untoggle').click(function() {
+          $('.menu-right').removeClass('overlay');
         });
       });
+
+      function exit() {
+        $(document).ready(function() {
+          // console.log(`.grid-${id}`);
+          $('#hidden-popup').removeClass('active');
+        });
+      }
     </script>
   </body>
 </html>
